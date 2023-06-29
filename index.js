@@ -1,5 +1,4 @@
-function hasTargetSum(array, target) {
-  // Write your algorithm here
+
   
   function hasTargetSum(array, target) {
     for (let i = 0; i < array.length; i++) {
@@ -11,7 +10,7 @@ function hasTargetSum(array, target) {
     }
     return false; // No pair found that adds up to the target
   }
-}  
+
 
 
 
