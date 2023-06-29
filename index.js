@@ -1,14 +1,32 @@
 function hasTargetSum(array, target) {
   // Write your algorithm here
-}
+  
+  function hasTargetSum(array, target) {
+    for (let i = 0; i < array.length; i++) {
+      for (let j = i + 1; j < array.length; j++) {
+        if (array[i] + array[j] === target) {
+          return true; // Found a pair that adds up to the target
+        }
+      }
+    }
+    return false; // No pair found that adds up to the target
+  }
+}  
+
+
+
 
 /* 
   Write the Big O time complexity of your function here
+  O(n^2)
 */
 
 /* 
   Add your pseudocode here
-*/
+  loop through the array
+  loop again to check the first element against the rest
+  check whether the sum gives the target
+  */
 
 /*
   Add written explanation of your solution here
